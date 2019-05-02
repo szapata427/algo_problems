@@ -8,23 +8,32 @@
 
 function reverse(str) {
 
-  // best soluton
-let reversed = '';
-for(let character of str) {
+
+// let string_array = str.split("")
+// console.log(string_array)
+// let reversed = ""
+// while (string_array.length > 0) {
+//   console.log(reversed += string_array.pop())
+// }
+
+
+//best solution
+let reversed = ""
+for (let character of str) {
   reversed = character + reversed
+  console.log(reversed)
 }
+
 return reversed
 
 
-// 2nd best solution
-const arr = str.split('')
-arr.reverse()
-return arr.join('')
+// str.split("").reduce((reverse, character) => {
+//   return reversed = reverse + character
+// }, "")
 
-return str.split('').reverse().join('')
 
 // rare soluton but a good One
-  return str.split("").reduce((rev, char)=> char + rev, '');
+  // return str.split("").reduce((rev, char)=> char + rev, '');
 
 
 }
